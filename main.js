@@ -43,7 +43,7 @@ function adicionaLinha(){
     
         linhas += linha;
     }
-    
+
     inputNomeAtividade.value = "";
     inputNota.value = "";   
 }
@@ -56,7 +56,7 @@ function atualizaTabela(){
 
 function atualizaMediaFinal(){
     const mediaFinal = calculaMediaFinal();
-    document.getElementById("mediaFinal").innerHTML = mediaFinal;
+    document.getElementById("mediaFinal").innerHTML = mediaFinal.toFixed(2);
     document.getElementById("mediaFinalResultado").innerHTML = mediaFinal >= 7 ? spanAprovado : spanReprovado;            ;
 }
 
